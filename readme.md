@@ -1,6 +1,7 @@
 # Yourls-Plugin-ExternalLinkWarning
 
 A [YOURLS](http://yourls.org) plugin to warn visitors that they are about to visit an external link.
+[中文版](https://gitee.com/richardhu714/yourls-plugin-external-link-warning)
 
 ## Features
 
