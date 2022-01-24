@@ -1,16 +1,12 @@
 <?php
 /*
 Plugin Name: External Link Warning
-Plugin URI: https://github.com/richardhu714
+Plugin URI: https://github.com/richardhu714/Yourls-Plugin-ExternalLinkWarning
 Description: Warn visitors that they are about to visit an external link
 Version: 1.0
 Author: Richard Hu
-Author URI: https://url.zekun.fun/gh
+Author URI: https://github.com/richardhu714
 */
-
-////////////////////////////////////////////////////////////////////////
-$your_site='http://mywebsite.link'; //type your website address in front
-////////////////////////////////////////////////////////////////////////
 
 // No direct call
 if (!defined('YOURLS_ABSPATH')) die();
@@ -125,6 +121,11 @@ function warn_pages($url)
 }
 function link_warning($args)
 {
+
+//////////////////////////////////////////////////////////////////
+$your_site='mywebsite.com'; //type your website address in front//
+//////////////////////////////////////////////////////////////////
+    
     $url = $args[0];
     $code = $args[1];
     if (strpos($url, $your_site)==false) {
